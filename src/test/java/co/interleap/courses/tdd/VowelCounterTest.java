@@ -12,4 +12,9 @@ public class VowelCounterTest {
         Assert.assertEquals(0, count);
     }
 
+    @Test
+    public void counterOneForStringOfOneLetterAVowel(){
+        Assert.assertEquals(1, new VowelCounter().count("e"));
+    }
+
 }
