@@ -17,4 +17,9 @@ public class VowelCounterTest {
         Assert.assertEquals(1, new VowelCounter().count("e"));
     }
 
+    @Test
+    public void counterForStringOfMultipleVowelsAndNoConsonant(){
+        Assert.assertEquals(3, new VowelCounter().count("ieu"));
+    }
+
 }
