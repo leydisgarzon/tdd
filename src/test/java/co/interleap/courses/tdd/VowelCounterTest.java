@@ -32,4 +32,9 @@ public class VowelCounterTest {
         Assert.assertEquals(0, new VowelCounter().count("nsdfgffrt"));
     }
 
+    @Test
+    public void counterForMultipleConsonantsAndVowels(){
+        Assert.assertEquals(5, new VowelCounter().count("iodfuie"));
+    }
+
 }
