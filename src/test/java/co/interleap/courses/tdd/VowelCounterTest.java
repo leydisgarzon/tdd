@@ -42,4 +42,13 @@ public class VowelCounterTest {
         Assert.assertEquals(6, new VowelCounter().count("Hello EmiliA"));
     }
 
+    @Test
+    public void counterForMultipleConsonantsAndVowelsAndSpecialCharacters() {
+        Assert.assertEquals(5, new VowelCounter().count("iod f*/u¡i@e"));
+    }
+
+    @Test
+    public void counterForMultipleSpecialCharacters() {
+        Assert.assertEquals(0, new VowelCounter().count("*/¡@-+^"));
+    }
 }
