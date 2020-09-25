@@ -37,4 +37,9 @@ public class VowelCounterTest {
         Assert.assertEquals(5, new VowelCounter().count("iodfuie"));
     }
 
+    @Test
+    public void counterForMultipleConsonantsAndVowelsUpperAndLowerCase(){
+        Assert.assertEquals(6, new VowelCounter().count("Hello EmiliA"));
+    }
+
 }

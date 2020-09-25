@@ -2,7 +2,7 @@ package co.interleap.courses.tdd;
 
 public class VowelCounter {
     public int count(String input){
-        String inputWithoutConsonants = input.replaceAll("[^aeiou]","");
+        String inputWithoutConsonants = input.toLowerCase().replaceAll("[^aeiou]","");
         return inputWithoutConsonants.length();
     }
 }
