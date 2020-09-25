@@ -22,4 +22,14 @@ public class VowelCounterTest {
         Assert.assertEquals(3, new VowelCounter().count("ieu"));
     }
 
+    @Test
+    public void counterZeroForOneLetterAConsonant(){
+        Assert.assertEquals(0, new VowelCounter().count("n"));
+    }
+
+    @Test
+    public void counterZeroForMultipleConsonantsNoVowel(){
+        Assert.assertEquals(0, new VowelCounter().count("nsdfgffrt"));
+    }
+
 }
